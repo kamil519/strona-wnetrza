@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Janusz Kowalski — architekt wnętrz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Janusz Kowalski</h1>
+        <p class="tag">architekt wnętrz</p>
+      </div>
+      <nav class="main-nav">
+        <a href="#o-mnie">O mnie</a>
+        <a href="#uslugi">Usługi</a>
+        <a href="#cennik">Cennik</a>
+        <a href="#galerie">Galeria</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <h2>Wnętrza z duszą — luksus, funkcja i zieleń</h2>
+      <p>Projektuję eleganckie i funkcjonalne przestrzenie — od koncepcji po nadzór autorski. Specjalność: aranżacje z roślinami dopasowanymi do stylu wnętrza.</p>
+      <a class="btn-primary" href="#galerie">Zobacz galerię</a>
+    </div>
+  </section>
+
+  <main class="container main-content">
+    <section id="o-mnie" class="card">
+      <h2>O mnie</h2>
+      <p>Nazywam się <strong>Janusz Kowalski</strong>. Jestem technikiem architektury krajobrazu z pasją do projektowania wnętrz. Łączę wiedzę o roślinach, kompozycji i świetle z elegancką, ponadczasową estetyką. Moje projekty są funkcjonalne, dopracowane i bogate w naturalne akcenty.</p>
+    </section>
+
+    <section id="uslugi" class="card">
+      <h2>Usługi</h2>
+      <ul class="services">
+        <li><strong>Projekt koncepcyjny</strong><br>Układ funkcjonalny, moodboard, paleta kolorów.</li>
+        <li><strong>Wizualizacje 3D</strong><br>Fotorealistyczne wizualizacje dla lepszego zrozumienia projektu.</li>
+        <li><strong>Dobór materiałów i wyposażenia</strong><br>Rekomendacje mebli, oświetlenia i dodatków.</li>
+        <li><strong>Nadzór autorski</strong><br>Nadzór nad realizacją zgodnie z projektem.</li>
+        <li><strong>Dobór roślin do wnętrza</strong><br>Dobieram rośliny estetyczne i łatwe w pielęgnacji, dopasowane do warunków wnętrza.</li>
+      </ul>
+    </section>
+
+    <section id="cennik" class="card">
+      <h2>Cennik (orientacyjny)</h2>
+      <table class="pricing">
+        <thead>
+          <tr><th>Usługa</th><th>Zakres</th><th>Cena*</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Projekt koncepcyjny</td><td>Układ, moodboard</td><td>od 800 PLN</td></tr>
+          <tr><td>Wizualizacje 3D</td><td>1 wizualizacja</td><td>od 250 PLN</td></tr>
+          <tr><td>Dobór materiałów</td><td>Komplet materiałów i mebli</td><td>od 400 PLN</td></tr>
+          <tr><td>Nadzór autorski</td><td>Opłata/dzień</td><td>od 200 PLN/dzień</td></tr>
+          <tr><td>Dobór roślin</td><td>Projekt i lista roślin</td><td>od 150 PLN</td></tr>
+        </tbody>
+      </table>
+      <p class="muted">*Ceny orientacyjne — zależne od zakresu i wielkości projektu. Na zapytanie przygotowuję wycenę indywidualną.</p>
+    </section>
+
+    <section id="galerie" class="card">
+      <h2>Galeria</h2>
+      <p>Wybierz kategorię, aby zobaczyć przykładowe realizacje (po 10 zdjęć każda).</p>
+
+      <div class="categories">
+        <button class="cat-btn active" data-cat="living">Salon</button>
+        <button class="cat-btn" data-cat="kitchen">Kuchnia</button>
+        <button class="cat-btn" data-cat="bedroom">Sypialnia</button>
+        <button class="cat-btn" data-cat="bathroom">Łazienka</button>
+        <button class="cat-btn" data-cat="plants">Rośliny</button>
+      </div>
+
+      <!-- Galeria kontenery -->
+      <div id="gallery-container">
+
+        <!-- SALON -->
+        <div class="gallery-grid show" data-name="living">
+          <!-- 10 obrazków - Unsplash dynamic -->
+          <!-- format: https://source.unsplash.com/800x600/?<tag>&sig=<n> -->
+          <!-- możesz podmienić src na swoje linki lub lokalne obrazy -->
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?living-room&sig=1" alt="Salon 1">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?living-room&sig=2" alt="Salon 2">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?living-room&sig=3" alt="Salon 3">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?living-room&sig=4" alt="Salon 4">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?living-room&sig=5" alt="Salon 5">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?living-room&sig=6" alt="Salon 6">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?living-room&sig=7" alt="Salon 7">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?living-room&sig=8" alt="Salon 8">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?living-room&sig=9" alt="Salon 9">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?living-room&sig=10" alt="Salon 10">
+        </div>
+
+        <!-- KITCHEN -->
+        <div class="gallery-grid" data-name="kitchen">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?kitchen-interior&sig=1" alt="Kuchnia 1">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?kitchen-interior&sig=2" alt="Kuchnia 2">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?kitchen-interior&sig=3" alt="Kuchnia 3">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?kitchen-interior&sig=4" alt="Kuchnia 4">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?kitchen-interior&sig=5" alt="Kuchnia 5">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?kitchen-interior&sig=6" alt="Kuchnia 6">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?kitchen-interior&sig=7" alt="Kuchnia 7">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?kitchen-interior&sig=8" alt="Kuchnia 8">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?kitchen-interior&sig=9" alt="Kuchnia 9">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?kitchen-interior&sig=10" alt="Kuchnia 10">
+        </div>
+
+        <!-- BEDROOM -->
+        <div class="gallery-grid" data-name="bedroom">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?bedroom-interior&sig=1" alt="Sypialnia 1">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?bedroom-interior&sig=2" alt="Sypialnia 2">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?bedroom-interior&sig=3" alt="Sypialnia 3">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?bedroom-interior&sig=4" alt="Sypialnia 4">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?bedroom-interior&sig=5" alt="Sypialnia 5">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?bedroom-interior&sig=6" alt="Sypialnia 6">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?bedroom-interior&sig=7" alt="Sypialnia 7">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?bedroom-interior&sig=8" alt="Sypialnia 8">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?bedroom-interior&sig=9" alt="Sypialnia 9">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?bedroom-interior&sig=10" alt="Sypialnia 10">
+        </div>
+
+        <!-- BATHROOM -->
+        <div class="gallery-grid" data-name="bathroom">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?bathroom-interior&sig=1" alt="Łazienka 1">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?bathroom-interior&sig=2" alt="Łazienka 2">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?bathroom-interior&sig=3" alt="Łazienka 3">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?bathroom-interior&sig=4" alt="Łazienka 4">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?bathroom-interior&sig=5" alt="Łazienka 5">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?bathroom-interior&sig=6" alt="Łazienka 6">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?bathroom-interior&sig=7" alt="Łazienka 7">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?bathroom-interior&sig=8" alt="Łazienka 8">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?bathroom-interior&sig=9" alt="Łazienka 9">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?bathroom-interior&sig=10" alt="Łazienka 10">
+        </div>
+
+        <!-- PLANTS -->
+        <div class="gallery-grid" data-name="plants">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?indoor-plants,interior&sig=1" alt="Rośliny 1">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?indoor-plants,interior&sig=2" alt="Rośliny 2">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?indoor-plants,interior&sig=3" alt="Rośliny 3">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?indoor-plants,interior&sig=4" alt="Rośliny 4">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?indoor-plants,interior&sig=5" alt="Rośliny 5">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?indoor-plants,interior&sig=6" alt="Rośliny 6">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?indoor-plants,interior&sig=7" alt="Rośliny 7">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?indoor-plants,interior&sig=8" alt="Rośliny 8">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?indoor-plants,interior&sig=9" alt="Rośliny 9">
+          <img loading="lazy" src="https://source.unsplash.com/800x600/?indoor-plants,interior&sig=10" alt="Rośliny 10">
+        </div>
+
+      </div> <!-- /gallery-container -->
+    </section>
+
+    <section id="kontakt" class="card">
+      <h2>Kontakt</h2>
+      <p>Chcesz dowiedzieć się więcej lub umówić konsultację? Napisz lub zadzwoń:</p>
+      <p>📧 <a href="mailto:janusz.kowalski@example.com">janusz.kowalski@example.com</a></p>
+      <p>📱 123 456 789</p>
+      <p>Możesz też opisać krótko projekt przez formularz: </p>
+      <form id="contact-form" class="contact-form" action="#" onsubmit="alert('Dzięki! Formularz demo — na produkcji dodaj backend lub użyj Netlify Forms / Formspree.'); return false;">
+        <input name="name" placeholder="Imię i nazwisko" required>
+        <input name="email" placeholder="Email" type="email" required>
+        <textarea name="message" placeholder="Krótki opis projektu" rows="4" required></textarea>
+        <button class="btn-primary" type="submit">Wyślij</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Janusz Kowalski — Architekt wnętrz</p>
+      <p class="muted">Strona demonstracyjna — zdjęcia: Unsplash.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox modal -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="">
+    <p id="lightbox-caption"></p>
+  </div>
+
+  <script>
+    // ustaw rok w stopce
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // kategorie galerii
+    const catBtns = document.querySelectorAll('.cat-btn');
+    const grids = document.querySelectorAll('.gallery-grid');
+
+    catBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        catBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const cat = btn.dataset.cat;
+        grids.forEach(g => {
+          g.classList.toggle('show', g.dataset.name === cat);
+        });
+        // scroll to gallery
+        document.getElementById('gallery-container').scrollIntoView({behavior: 'smooth'});
+      });
+    });
+
+    // lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lightbox-img');
+    const lbCaption = document.getElementById('lightbox-caption');
+
+    document.querySelectorAll('.gallery-grid img').forEach(img => {
+      img.addEventListener('click', (e) => {
+        lbImg.src = img.src.replace('800x600','1200x900'); // większe
+        lbCaption.textContent = img.alt || '';
+        lightbox.classList.add('open');
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      lbImg.src = '';
+    }
+
+    // Esc to close
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+</body>
+</html>
